@@ -1,0 +1,101 @@
+.SubSectionTwo .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--bgfaded);
+  padding: 30px 0;
+  overflow-x: hidden;
+  color: var(--textsColor);
+}
+
+.comments {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentSlides {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SubSectionTwo .container img {
+  width: 250px;
+}
+
+.comments p {
+  width: 55vw;
+  font-size: 13px;
+}
+
+.SubSectionTwo h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--textsColor);
+  letter-spacing: 0.5px;
+}
+
+.commentSlides .slide.right {
+  /* transform: translateX(-100%); */
+  background-color: red;
+}
+
+.FAQscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.FAQs {
+  width: 60vw;
+  background-color: rgb(15, 32, 30);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.FAQs button {
+  padding: 10px 30px;
+  background-color: rgb(247, 243, 240);
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+.FAQs p {
+  color: whitesmoke;
+  text-align: center;
+}
+
+@media (max-width: 818px) {
+  .commentSlides {
+    flex-direction: column;
+  }
+
+  .SubSectionTwo .container img {
+    width: 100%;
+  }
+
+  .comments p {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .FAQs p {
+    font-size: 13px;
+  }
+
+  .FAQs {
+    width: 80vw;
+  }
+}

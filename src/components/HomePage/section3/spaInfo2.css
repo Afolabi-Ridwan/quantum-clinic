@@ -1,0 +1,126 @@
+.spaInfoTwo .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--textsColor);
+}
+
+.spaInfoTwo .container h1 {
+  margin-bottom: 5px;
+  font-size: 25px;
+  width: 80vw;
+  text-align: center;
+}
+
+.tabOne {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.tabOne img {
+  width: 40vw;
+  height: 300px;
+}
+
+.tabOne .text {
+  line-height: 30px;
+  border-left: 5px solid var(--bgfaded);
+  padding-left: 15px;
+}
+
+.tabOne .text.textTabTwo {
+  text-align: right;
+  border-right: 5px solid var(--bgfaded);
+  border-left: none;
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+.spaInfoTwo .container.containerTwo {
+  background-color: rgb(214, 206, 214, 0.2);
+  padding-top: 30px;
+}
+
+.spaInfoTwo .container.containerTwo h1 {
+  font-size: 25px;
+  width: 60vw;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+/* styling the small green spa image tab */
+
+.spaImageTab {
+  color: rgb(42, 100, 71);
+  letter-spacing: 2px;
+}
+.spaImageTabNote {
+  background: url(../../../media/Floatation-rest-therapy.d58627dcb1493b547721.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spaImageTabNote h4 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  width: 90vw;
+}
+
+.spaImageTabNote p {
+  width: 50vw;
+  text-align: center;
+}
+
+.spaImageTabNote button {
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  padding: 20px 30px;
+  margin: 50px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 818px) {
+  .tabOne {
+    flex-direction: column;
+  }
+
+  .tabOne {
+    align-items: flex-start;
+  }
+  .tabOne img {
+    width: 100%;
+    margin-top: 20px;
+    width: 80vw;
+    height: auto;
+  }
+
+  .spaInfoTwo .container.containerTwo .tabTwo {
+    align-items: flex-end;
+  }
+
+  .spaInfoTwo .container.containerTwo .text.textTabTwo {
+    margin-top: 20px;
+  }
+
+  .spaInfoTwo .container:last-of-type h1 {
+    width: 70vw;
+  }
+
+  .spaImageTabNote p {
+    width: 80vw;
+  }
+}

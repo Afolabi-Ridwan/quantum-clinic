@@ -1,0 +1,79 @@
+.sectionFive .tabs img {
+  width: 150px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.sectionFive h3 {
+  margin-top: 10px;
+  color: var(--textsColor);
+}
+
+.sectionFive .tabs {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(241, 225, 201, 0.2);
+  margin-top: 20px;
+  padding: 30px 50px;
+  border-radius: 100px;
+  color: var(--textsColor);
+}
+
+.sectionFive .SubSectionOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(214, 206, 214, 0.2);
+  padding: 30px 0;
+}
+
+.sectionFive .tabs p {
+  width: 50vw;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.sectionFive .tabs h4 {
+  margin-bottom: 5px;
+}
+
+.videoContainer {
+  max-width: 100vw;
+  margin: 40px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.videoContainer p {
+  color: var(--textsColor);
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (max-width: 818px) {
+  .sectionFive .tabs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90vw;
+  }
+
+  .sectionFive .tabs.tabOne {
+    flex-direction: column-reverse;
+  }
+
+  .sectionFive .tabs p {
+    width: 70vw;
+  }
+
+  .sectionFive .tabs img {
+    margin-bottom: 5px;
+  }
+}

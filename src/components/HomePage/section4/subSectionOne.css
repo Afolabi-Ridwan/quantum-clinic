@@ -1,0 +1,136 @@
+.SubSectionOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  flex-direction: column;
+}
+
+.SubSectionOne .container {
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SubSectionOne .container .tabs {
+  width: 250px;
+  color: var(--textsColor);
+}
+
+.SubSectionOne .container .tabs:first-of-type {
+  margin-right: 50px;
+}
+
+.SubSectionOne .container .tabs:last-of-type {
+  margin-left: 50px;
+}
+
+.SubSectionOne .container .tabs img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.serviceAndRate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.serviceAndRate h3 {
+  font-weight: 500;
+}
+
+.SubSectionOne .container .tabs h4 span {
+  font-weight: 300;
+}
+
+.SubSectionOne .container .tabs h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.SubSectionOne .container .tabs h5 {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.SubSectionOne .container .tabs button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--bg);
+  border: none;
+  color: var(--textsColor);
+  font-size: 15px;
+}
+
+.SubSectionOne .secondTab {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: rgb(214, 206, 214, 0.2);
+  padding: 20px 0;
+  color: var(--textsColor);
+}
+
+.SubSectionOne .secondTab img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.SubSectionOne .secondTab p {
+  font-size: 12px;
+  width: 200px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+.SubSectionOne .secondTab h4 {
+  font-size: 13px;
+}
+
+.SubSectionOne .floatationRest {
+  margin: 0 10vw;
+}
+
+@media (max-width: 818px) {
+  .SubSectionOne .container .tabs {
+    width: 80vw;
+  }
+
+  .SubSectionOne .container {
+    flex-direction: column;
+  }
+
+  .SubSectionOne .container .tabs:first-of-type {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .SubSectionOne .container .tabs:last-of-type {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .serviceAndRate {
+    font-size: 13px;
+  }
+
+  .SubSectionOne .secondTab {
+    flex-direction: column;
+  }
+
+  .SubSectionOne .secondTab p {
+    width: 70vw;
+  }
+  .SubSectionOne .floatationRest {
+    margin: 30px 0;
+  }
+}

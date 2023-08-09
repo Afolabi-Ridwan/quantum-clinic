@@ -1,0 +1,147 @@
+.SubSectionTwo {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tabOne {
+  display: flex;
+  width: 90vw;
+  background-color: rgb(25, 65, 65);
+  padding: 30px 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabOne .texts {
+  color: whitesmoke;
+}
+
+.tabOne .texts h4 {
+  font-weight: 500;
+}
+
+.tabOne .texts p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.tabOne input {
+  padding: 10px;
+  border: none;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.tabOne button {
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  border: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* styling tabtwo */
+
+.tabTwo {
+  width: 100%;
+  background-color: var(--bgfaint);
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.tabTwo p {
+  width: 50vw;
+  text-align: center;
+}
+
+/* styling third tab */
+.tabThree {
+  background-color: rgb(15, 32, 30);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.tabThree .menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.tabThree .sideBar {
+  padding: 0 10px;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.tabThree .firstSideBar {
+  border-right: 1px solid white;
+  padding: 0 10px;
+}
+
+.tabThree .lastSideBar {
+  border-left: 1px solid white;
+  padding: 0 10px;
+}
+
+@media (max-width: 818px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tabOne input {
+    width: 250px;
+  }
+
+  .tabOne {
+    flex-direction: column;
+  }
+
+  .tabOne .texts {
+    text-align: center;
+  }
+
+  .tabThree .menus {
+    flex-direction: column;
+  }
+
+  .tabThree .sideBar {
+    padding: 0;
+    border-right: none;
+    border-left: none;
+    margin-top: 10px;
+  }
+
+  .tabThree .firstSideBar {
+    border-right: none;
+    padding: 0;
+  }
+
+  .tabThree .lastSideBar {
+    border-left: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+}
