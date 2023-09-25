@@ -1,6 +1,7 @@
 import "./spaInfo2.css";
 import firstImage from "../../../media/center-for-healing.c39d0f65309f185ebeca.jpg";
 import secondImage from "../../../media/stress-reduction-and-relaxation.dbb6b5f06c59df6a22bb.jpg";
+import SpaImageSection from "./spaImageSection";
 
 function SpaInfoTwo() {
   return (
@@ -51,15 +52,8 @@ function SpaInfoTwo() {
         </div>
       </div>
 
-      <div className="spaImageTab">
-        <div className="spaImageTabNote">
-          <h4>A SPA TREATMENT FOR YOUR DNA</h4>
-          <button> book now</button>
-          <p>
-            Our clinic is conveniently located in Elysian Valley, just 10
-            minutes North of Downtown Los Angeles, California.
-          </p>
-        </div>
+      <div>
+        <SpaImageSection />
       </div>
     </div>
   );

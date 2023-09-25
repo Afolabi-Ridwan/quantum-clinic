@@ -1,0 +1,84 @@
+.theShop .sessions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.theShop .secondTab .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 0px;
+  max-width: 40vw;
+}
+
+.theShop .secondTab .getCard {
+  margin: 0 20px;
+}
+
+/* .theShop .secondTab h4 {
+  margin: 20px 0;
+} */
+.theShop .secondTab .itemHeader {
+  font-size: 25px;
+  color: var(--textsColor);
+  margin-bottom: 20px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.theShop .secondTab .products {
+  align-items: flex-start;
+}
+
+.theShop .secondTab .productLabel {
+  font-weight: 700;
+}
+
+.theShop .secondTab .infoNote {
+  font-size: 12px;
+}
+
+.theShop .secondTab img {
+  width: 50%;
+  max-height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.theShop .secondTab .imageContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theShop .secondTab button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--textsColor);
+  border: none;
+  color: white;
+}
+
+@media (max-width: 818px) {
+  .theShop .secondTab .getCard {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 1040px) {
+  .theShop .secondTab .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  .theShop .secondTab .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+}

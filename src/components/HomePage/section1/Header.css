@@ -12,14 +12,19 @@ img {
   padding: 20px;
   background-color: var(--bgfaded);
   color: var(--textsColor);
+  z-index: 500;
 }
 
 .header .navbar ul {
   display: flex;
-  width: 40vw;
-  justify-content: space-between;
+  /* width: 50vw; */
+  /*justify-content: space-between; */
   align-items: center;
   list-style: none;
+}
+
+.header .navbar ul li {
+  margin-left: 15px;
 }
 
 .header .booking {
@@ -39,11 +44,29 @@ img {
   margin-right: 20px;
 }
 
+.bold-text{
+  font-weight: bolder;
+}
+
 @media (max-width: 818px) {
   .header .navbar {
     display: none;
   }
   .header .booking {
     display: none;
+  }
+
+  .header .navbar ul li {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 958px) {
+  .header .navbar ul li {
+    font-size: 12px;
+  }
+
+  .header .booking p {
+    font-size: 12px;
   }
 }

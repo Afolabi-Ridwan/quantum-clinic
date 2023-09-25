@@ -16,4 +16,10 @@
   --bgfaded: rgb(214, 206, 214);
   --bg: rgb(173, 151, 172);
   --textsColor: rgb(46, 73, 97);
+  --bottomTag: rgb(25, 65, 65);
+}
+
+.linkTag {
+  text-decoration: none;
+  color: unset;
 }

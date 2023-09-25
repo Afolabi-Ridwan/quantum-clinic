@@ -1,0 +1,93 @@
+.events {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.getCard {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--textsColor);
+  background-color: white;
+  box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.topImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+.events .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  font-size: 40px;
+  color: var(--textsColor);
+  font-weight: bold;
+}
+
+.events .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 0px;
+  max-width: 40vw;
+  margin-bottom: 30px;
+}
+
+.events .getCard {
+  margin: 0 20px;
+}
+
+.events .image {
+  width: 100%;
+}
+
+.events .infoNote {
+  /* margin: 40px 0; */
+}
+
+.events .productLabel {
+  font-size: 20px;
+  max-width: 300px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.events button {
+  width: 60%;
+  padding: 10px 0;
+  background-color: var(--textsColor);
+  border: none;
+  color: white;
+}
+
+@media (max-width: 1170px) {
+  .events .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 818px) {
+  .events .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .events .header {
+    font-size: 30px;
+    text-align: center;
+    max-width: 90vw;
+  }
+}

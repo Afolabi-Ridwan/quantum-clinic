@@ -108,10 +108,10 @@
   border-radius: 5px;
 }
 
-.viewServices .linkTag {
+/* .viewServices .linkTag {
   text-decoration: none;
   color: unset;
-}
+} */
 @media (max-width: 818px) {
   .infos {
     width: 80vw;

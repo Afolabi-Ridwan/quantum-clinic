@@ -13,6 +13,7 @@
   width: 100vw;
   align-items: center;
   justify-content: center;
+  transition: ease-in 1s;
 }
 
 .commentSlides {
@@ -20,6 +21,7 @@
   width: 90vw;
   align-items: center;
   justify-content: space-between;
+  transition: 0.9s ease-in;
 }
 
 .SubSectionTwo .container img {
@@ -31,6 +33,10 @@
   font-size: 13px;
 }
 
+.comments.active {
+  width: 100%;
+}
+
 .SubSectionTwo h3 {
   display: flex;
   justify-content: center;
@@ -40,10 +46,9 @@
   letter-spacing: 0.5px;
 }
 
-.commentSlides .slide.right {
-  /* transform: translateX(-100%); */
-  background-color: red;
-}
+/* .commentSlides.right {
+  transform: translateX(-200vw);
+} */
 
 .FAQscontainer {
   display: flex;
@@ -99,3 +104,15 @@
     width: 80vw;
   }
 }
+
+/* @keyframes slide {
+    100% {
+      transform: translateX(100vw);
+    }
+    200% {
+      transform: translateX(200vw);
+    }
+     300%{
+      transform: translateX(300vw);
+    }
+} */
